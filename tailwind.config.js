@@ -4,10 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '16px',
+    },
     extend: {
       colors:{
         indigo: '#6366f1',
         dark: '#0f172a'
+      },
+      screens: {
+        '2xl': '1320px' 
       }
     },
   },
