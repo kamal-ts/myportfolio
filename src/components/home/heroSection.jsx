@@ -8,7 +8,7 @@ const heroSection = () => {
 
   return (
 
-    <div className='container lg:px-24'>
+    <div className='container lg:px-28'>
       <div className='flex flex-col md:flex-row justify-between items-center md:hidden'>
         <div className='w-full px-4 lg:w-auto flex justify-center'>
           <div className='relative'>
