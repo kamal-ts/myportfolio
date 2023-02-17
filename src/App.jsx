@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import HeroSection from './components/home/heroSection'
 import AboutSection from './components/home/aboutSection'
+import Header from './components/home/header'
 
 function App() {
   useEffect(() => {
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <body>
+      <Header/>
       <section id='home' className='pt-36'>
         <HeroSection/>
       </section>
