@@ -6,6 +6,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm shadow-sm
+}
+
 .hamburger-line {
     @apply w-[30px] h-[2px] my-2 block bg-dark
 }

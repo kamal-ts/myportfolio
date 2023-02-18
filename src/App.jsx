@@ -13,7 +13,7 @@ function App() {
   return (
     <body>
       <Header/>
-      <section id='home' className='pt-36'>
+      <section id='home' className='pt-14'>
         <HeroSection/>
       </section>
       <section id='about' className='pt-36 pb-32'>
