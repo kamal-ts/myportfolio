@@ -27,15 +27,41 @@ function Header() {
             <div className='container lg:px-28'>
                 <div className='flex items-center justify-between relative'>
                     <div className='px-4'>
-                        <a href="#" className='font-bold text-lg text-indigo block py-6'>Kamaluddin</a>
+                        <a href="#" className='font-bold text-lg text-indigo block py-4'>Kamaluddin</a>
                     </div>
                     <div className='flex items-center px-4'>
                         <button id='hamburger' onClick={handleMenu} name='hamburger' type='button'
-                            className={`block absolute right-4 `}>
+                            className={`block absolute right-4 lg:hidden`}>
                             <span className={`hamburger-line transition duration-300 ease-in-out origin-top-left ${hamburger ? 'rotate-45' : ''}`}></span>
                             <span className={`hamburger-line transition duration-300 ease-in-out ${hamburger ? 'scale-0' : ''}`}></span>
                             <span className={`hamburger-line transition duration-300 ease-in-out origin-bottom-left ${hamburger ? '-rotate-45' : ''}`}></span>
                         </button>
+                        <nav id='nav-menu' className={`z-[9999] absolute py-5 shadow-lg rounded-lg bg-white max-w-[250px] w-full right-4 lg:right-auto top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ${hamburger ? '' : 'hidden'}`}>
+                            <ul className='block lg:flex'>
+                                <li className='group'>
+                                    <a href="#home" className='block text-base text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Beranda</a>
+                                </li>
+                                <li className='group'>
+                                    <a href="#about" className='block text-base text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Tentang Saya</a>
+                                </li>
+                                <li className='group'>
+                                    <a href="#home" className='block text-base text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Beranda</a>
+                                </li>
+                                <li className='group'>
+                                    <a href="#portfolio" className='block text-base text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Portfolio</a>
+                                </li>
+                                <li className='group'>
+                                    <a href="#blog" className='block text-base text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Blog</a>
+                                </li>
+                                <li className='group'>
+                                    <a href="#contact" className='block text-base text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Contact</a>
+                                </li>
+
+                                {/* <li className='group'>
+                                    <a href="#clients" className='block text-base text-dark py-2 px-8 group-hover:text-indigo'>Clients</a>
+                                </li> */}
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
