@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import HeroSection from './components/home/heroSection'
 import AboutSection from './components/home/aboutSection'
 import Header from './components/home/header'
+import Portfolio from './components/home/portfolio'
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,10 @@ function App() {
       <section id='about' className='pt-36 pb-32'>
         <AboutSection/>
       </section>
+      <section id='portfolio' className='pt-36 pb-16 bg-slate-100'>
+        <Portfolio/>
+      </section>
+
     </body>
   );
 }
