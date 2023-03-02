@@ -3,6 +3,7 @@ import HeroSection from './components/home/heroSection'
 import AboutSection from './components/home/aboutSection'
 import Header from './components/home/header'
 import Portfolio from './components/home/portfolio'
+import Clients from './components/home/clients'
 
 function App() {
   useEffect(() => {
@@ -12,7 +13,7 @@ function App() {
   
 
   return (
-    <body>
+    <div>
       <Header/>
       <section id='home' className='pt-14'>
         <HeroSection/>
@@ -23,8 +24,10 @@ function App() {
       <section id='portfolio' className='pt-36 pb-16 bg-slate-100'>
         <Portfolio/>
       </section>
-
-    </body>
+      <section id='clients' className='pt-36 pb-32 bg-slate-800'>
+        <Clients/>
+      </section>
+    </div>
   );
 }
 
