@@ -10,7 +10,7 @@ function clients() {
                 <div className='mx-auto text-center mb-16'>
                     <h4 className='font-semibold text-lg text-indigo mb-2 uppercase'>Clients</h4>
                     <h2 className='font-bold text-white text-3xl mb-4 capitalize'>Yang pernah bekerjasama</h2>
-                    <p className='font-medium text-sm md:text-lg'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas laboriosam aliquid corporis!</p>
+                    <p className='font-medium text-sm text-secondary md:text-lg'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas laboriosam aliquid corporis!</p>
                 </div>
             </div>
             <div className='w-full px-4'>

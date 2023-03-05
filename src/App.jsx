@@ -4,6 +4,9 @@ import AboutSection from './components/home/aboutSection'
 import Header from './components/home/header'
 import Portfolio from './components/home/portfolio'
 import Clients from './components/home/clients'
+import Blog from './components/home/blog'
+import Contact from './components/home/contact'
+
 
 function App() {
   useEffect(() => {
@@ -24,8 +27,14 @@ function App() {
       <section id='portfolio' className='pt-36 pb-16 bg-slate-100'>
         <Portfolio/>
       </section>
-      <section id='clients' className='pt-36 pb-32 bg-slate-800'>
+      <section id='clients' className='pt-36 pb-32 bg-dark'>
         <Clients/>
+      </section>
+      <section id='blog' className='pt-36 pb-32 bg-slate-100'>
+        <Blog/>
+      </section>
+      <section id='contact' className='pt-36 pb-32 bg-slate-100'>
+        <Contact/>
       </section>
     </div>
   );
