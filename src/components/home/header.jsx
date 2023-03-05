@@ -48,6 +48,9 @@ function Header() {
                                     <a href="#portfolio" className='block text-base transition-all duration-300 text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Portfolio</a>
                                 </li>
                                 <li className='group'>
+                                    <a href="#clients" className='block text-base transition-all duration-300 text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Clients</a>
+                                </li>
+                                <li className='group'>
                                     <a href="#blog" className='block text-base transition-all duration-300 text-dark py-2 lg:py-0 pl-8 group-hover:text-indigo'>Blog</a>
                                 </li>
                                 <li className='group'>

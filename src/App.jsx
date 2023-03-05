@@ -6,7 +6,7 @@ import Portfolio from './components/home/portfolio'
 import Clients from './components/home/clients'
 import Blog from './components/home/blog'
 import Contact from './components/home/contact'
-
+import Footer from './components/home/footer'
 
 function App() {
   useEffect(() => {
@@ -36,6 +36,9 @@ function App() {
       <section id='contact' className='pt-36 pb-32'>
         <Contact/>
       </section>
+      <footer id='footer' className='pt-24 pb-12 bg-dark'>
+        <Footer/>
+      </footer>
     </div>
   );
 }
