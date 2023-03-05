@@ -6,7 +6,7 @@ function portfolio() {
   return (
     <div className='container lg:px-28'>
       <div className='w-full px-4'>
-        <div className='max-w-xl mx-auto text-center'>
+        <div className='max-w-xl mx-auto text-center mb-16'>
           <h4 className='font-semibold text-lg text-indigo mb-2 uppercase'>Portfolio</h4>
           <h2 className='font-bold text-dark text-3xl mb-4'>Project Terbaru</h2>
           <p className='font-medium text-sm md:text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil asperiores dolore magnam! Autem soluta tenetur ipsa sint eum reprehenderit placeat.</p>

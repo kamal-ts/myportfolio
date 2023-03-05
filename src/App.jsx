@@ -33,7 +33,7 @@ function App() {
       <section id='blog' className='pt-36 pb-32 bg-slate-100'>
         <Blog/>
       </section>
-      <section id='contact' className='pt-36 pb-32 bg-slate-100'>
+      <section id='contact' className='pt-36 pb-32'>
         <Contact/>
       </section>
     </div>
