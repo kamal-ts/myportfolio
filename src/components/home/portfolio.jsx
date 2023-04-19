@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 function portfolio() {
@@ -16,11 +17,16 @@ function portfolio() {
         {gambar.map((g, i) => (
 
           <div className='p-4 md:w-1/2 ' key={i}>
-            <div className='overflow-hidden border-2 rounded-2xl hover:border-sky-400 transition duration-300 hover:cursor-pointer'>
+            <div className='overflow-hidden bg-white shadow-lg border-2 rounded-2xl hover:border-sky-400 transition duration-300 hover:cursor-pointer'>
               <img src={`/img/${g}`} alt="portfolio" className={"w-full h-56 lg:h-60 object-cover"} />
               <div className='px-4 pb-4'>
-                <h3 className='font-semibold text-lg text-dark mt-5 mb-3'>Restfull API aplikasi boking hotel</h3>
-                <p className='font-medium text-base text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium quasi, molestias aspernatur adipisci nisi.</p>
+                <h3 className='font-semibold text-lg text-dark mt-5 mb-3 truncate '>Restfull API aplikasi boking hotel</h3>
+                <div className='flex gap-2'>
+
+                <a href='#sas' className='bg-indigo py-2 px-4 inline-block rounded-xl text-sm font-medium text-white hover:opacity-80'>Detile</a>
+                <a href='#sas' className='bg-slate-200 py-2 px-4 inline-block rounded-xl text-sm font-medium text-secondary hover:opacity-80'>Visit</a>
+                {/* <p className='font-medium text-base text-secondary' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium quasi, molestias aspernatur adipisci nisi.</p> */}
+                </div>
               </div>
             </div>
           </div>

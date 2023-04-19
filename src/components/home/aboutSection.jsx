@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import { FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
+import { FaTwitter, FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 
 function aboutSection() {
   return (
@@ -15,14 +15,17 @@ function aboutSection() {
             <h3 className='font-semibold text-dark text-2xl mb-2'>Hubungi saya</h3>
             <p className='text-base font-medium text-secondary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque numquam vel fuga tenetur illo odit ratione assumenda, impedit, similique, dolores omnis voluptates eveniet optio perferendis expedita. Dignissimos cumque totam possimus?</p>
               <div className=' flex items-center mt-4 gap-2 '>
-                <a href="#" className='transition-all duration-300 rounded-full flex justify-center items-center text-slate-300 border-2 border-slate-300 p-2 hover:border-indigo hover:text-white hover:bg-indigo '>
+                <a href="#" className='transition-all duration-300 text-xl rounded-full flex justify-center items-center text-slate-400 border-2 border-slate-400 p-2 hover:border-indigo hover:text-white hover:bg-indigo '>
                   <FaLinkedinIn/>
                 </a>
-                <a href="#" className='transition-all duration-300 rounded-full flex justify-center items-center text-slate-300 border-2 border-slate-300 p-2 hover:border-indigo hover:text-white hover:bg-indigo '>
+                <a href="#" className='transition-all duration-300 text-xl rounded-full flex justify-center items-center text-slate-400 border-2 border-slate-400 p-2 hover:border-indigo hover:text-white hover:bg-indigo '>
                   <FaTwitter/>
                 </a>
-                <a href="#" className='transition-all duration-300 rounded-full flex justify-center items-center text-slate-300 border-2 border-slate-300 p-2 hover:border-indigo hover:text-white hover:bg-indigo '>
+                <a href="#" className='transition-all duration-300 text-xl rounded-full flex justify-center items-center text-slate-400 border-2 border-slate-400 p-2 hover:border-indigo hover:text-white hover:bg-indigo '>
                   <FaInstagram/>
+                </a>
+                <a href="#" className='transition-all duration-300 text-xl rounded-full flex justify-center items-center text-slate-400 border-2 border-slate-400 p-2 hover:border-indigo hover:text-white hover:bg-indigo '>
+                  <FaGithub/>
                 </a>
               </div>          
           </div>
