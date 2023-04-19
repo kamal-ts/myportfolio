@@ -12,7 +12,7 @@ function portfolio() {
           <p className='font-medium text-sm md:text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil asperiores dolore magnam! Autem soluta tenetur ipsa sint eum reprehenderit placeat.</p>
         </div>
       </div>
-      <div className='w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto '>
+      <div className='w-full flex flex-wrap justify-center xl:w-10/12 xl:mx-auto '>
         {gambar.map((g, i) => (
 
           <div className='p-4 md:w-1/2 ' key={i}>
