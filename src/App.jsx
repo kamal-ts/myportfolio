@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <section id='home' className='pt-14'>
+      <section id='home' className='pt-5 md:pt-14'>
         <HeroSection/>
       </section>
       <section id='about' className='pt-36 pb-32'>

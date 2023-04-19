@@ -65,7 +65,7 @@ function footer() {
                         <FaInstagram />
                     </a>
                 </div>
-                <p className='font-semibold text-xs text-slate-500 text-center'>Dibuat oleh <a href="https://github.com/kamal-ts" target={'_blank'} className='font-bold text-indigo'>La Ode Kamaluddin</a>, menggunakan <a href="https://tailwindcss.com" target={'_blank'} className='font-bold text-sky-500'>Tailwind CSS</a> dan Reactjs.</p>
+                <p className='font-semibold text-xs text-slate-500 text-center'>Dibuat oleh <a href="https://github.com/kamal-ts" target={'_blank'} className='font-bold text-indigo'>La Ode Kamaluddin</a>, menggunakan <a href="https://tailwindcss.com" target={'_blank'} className='font-bold text-sky-500'>Tailwind CSS</a> dan <a href="https://react.dev/" target={'_blank'} className='font-bold text-[#61dafb]'>ReactJs</a> .</p>
             </div>
         </div>
     )
