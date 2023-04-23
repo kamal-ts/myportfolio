@@ -7,6 +7,7 @@ import Clients from './components/home/clients'
 import Blog from './components/home/blog'
 import Contact from './components/home/contact'
 import Footer from './components/home/footer'
+import Skills from './components/home/skills'
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,9 @@ function App() {
       </section>
       <section id='about' className='pt-36 pb-32'>
         <AboutSection/>
+      </section>
+      <section id='skills' className='pt-36 pb-32'>
+        <Skills/>
       </section>
       <section id='portfolio' className='pt-36 pb-16 bg-slate-100'>
         <Portfolio/>
