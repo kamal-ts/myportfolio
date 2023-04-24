@@ -17,15 +17,15 @@ function skills() {
             <h2 className='flex-shrink-0 font-bold text-lg'>Programing Langue</h2>
             <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full py-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
             <a target="_blank" rel="noopener noreferrer" href='https://www.typescriptlang.org/' 
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#3178c6] text-white bg-[#3178c6]">TypeScript</a>
+              className="skills-list border-[#3178c6] text-white bg-[#3178c6]">TypeScript</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#f7e018] text-dark bg-[#f7e018]">Javascript</a>
+              className="skills-list border-[#f7e018] text-dark bg-[#f7e018]">Javascript</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#8a93be] text-dark bg-[#8a93be]">PHP</a>
+              className="skills-list border-[#8a93be] text-dark bg-[#8a93be]">PHP</a>
             {/* <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#0c8cc4] text-[#ec2025] bg-white">Java</a> */}
+              className="skills-list border-[#0c8cc4] text-[#ec2025] bg-white">Java</a> */}
           </div >
         </div>
         {/* backend */}
@@ -34,17 +34,17 @@ function skills() {
             <h2 className='flex-shrink-0 font-bold text-lg'>Backend</h2>
             <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full py-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
             <a target="_blank" rel="noopener noreferrer" href='https://nodejs.org/en'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#6aa75c] text-[#303030] bg-[#6aa75c]">NodeJs</a>
+              className="skills-list border-[#6aa75c] text-[#303030] bg-[#6aa75c]">NodeJs</a>
             <a target="_blank" rel="noopener noreferrer" href='https://expressjs.com/'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#6aa75c] text-[#303030] bg-[#ffffff]">ExpressJs</a>
+              className="skills-list border-[#6aa75c] text-[#303030] bg-[#ffffff]">ExpressJs</a>
             <a target="_blank" rel="noopener noreferrer" href='https://codeigniter.com/'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#ee4323] text-white bg-[#ee4323]">Codeighniter</a>
+              className="skills-list border-[#ee4323] text-white bg-[#ee4323]">Codeighniter</a>
             <a target="_blank" rel="noopener noreferrer" href='https://nestjs.com/'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#e0234e] text-white bg-[#e0234e]">NestJs</a>
+              className="skills-list border-[#e0234e] text-white bg-[#e0234e]">NestJs</a>
             <a target="_blank" rel="noopener noreferrer" href='https://nextjs.org/'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#000000] text-white bg-[#000000]">NextJs</a>
+              className="skills-list border-[#000000] text-white bg-[#000000]">NextJs</a>
           </div >
         </div>
         {/* frontend */}
@@ -53,13 +53,13 @@ function skills() {
             <h2 className='flex-shrink-0 font-bold text-lg'>Frontend</h2>
             <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full py-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#00d8ff] text-[#00d8ff] bg-[#222222]">ReactJs</a>
+              className="skills-list border-[#00d8ff] text-[#00d8ff] bg-[#222222]">ReactJs</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#35bef8] text-[#303030] bg-[#35bef8]">Tailwindcss</a>
+              className="skills-list border-[#35bef8] text-[#303030] bg-[#35bef8]">Tailwindcss</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#000000] text-white bg-[#000000]">NextJs</a>
+              className="skills-list border-[#000000] text-white bg-[#000000]">NextJs</a>
           </div >
         </div>
         {/* database dan orm */}
@@ -68,21 +68,21 @@ function skills() {
             <h2 className='flex-shrink-0 font-bold text-lg'>Database & ORM</h2>
             <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full py-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#00678c] text-[#cc8b29] bg-[#ffffff]">MySQL</a>
+              className="skills-list border-[#00678c] text-[#cc8b29] bg-[#ffffff]">MySQL</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#07ac4f] text-white bg-[#07ac4f]">MongoDB</a>
+              className="skills-list border-[#07ac4f] text-white bg-[#07ac4f]">MongoDB</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#3f7ca4] text-white bg-[#3f7ca4]">PostgreSQL</a>
+              className="skills-list border-[#3f7ca4] text-white bg-[#3f7ca4]">PostgreSQL</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#3dcc8c] text-[#3dcc8c] bg-[#161616]">Supabase</a>
+              className="skills-list border-[#3dcc8c] text-[#3dcc8c] bg-[#161616]">Supabase</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#8a0606] text-white bg-[#8a0606]">Mongoose</a>
+              className="skills-list border-[#8a0606] text-white bg-[#8a0606]">Mongoose</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#0c344b] text-white bg-[#0c344b]">Prisma</a>
+              className="skills-list border-[#1294d4] text-[#2f406a] bg-[#ffffff]">Sequelize</a>
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#1294d4] text-[#2f406a] bg-[#ffffff]">Sequelize</a>
+              className="skills-list border-[#0c344b] text-white bg-[#0c344b]">Prisma</a>
           </div >
         </div>
 
@@ -91,11 +91,11 @@ function skills() {
             <h2 className='flex-shrink-0 font-bold text-lg'>Mobile</h2>
             <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full py-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
             {/* <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#42de89] text-[#103b4c] bg-[#42de89]">Android Studio</a> */}
+              className="skills-list border-[#42de89] text-[#103b4c] bg-[#42de89]">Android Studio</a> */}
             <a href='#a'
-              className="py-1 transition duration-300 ease-in-out opacity-70 hover:opacity-100 hover:shadow-lg hover:-translate-y-1 hover:scale-110 text-center rounded-full border-[3px] border-[#00d8ff] text-[#00d8ff] bg-[#222222]">React Native</a>
+              className="skills-list border-[#00d8ff] text-[#00d8ff] bg-[#222222]">React Native</a>
           </div >
         </div>
 
