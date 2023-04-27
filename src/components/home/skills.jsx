@@ -1,6 +1,161 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 function skills() {
+
+  const skills = [
+    {
+      title: 'Programing Langue',
+      data: [
+        {
+          name: 'TypeScript',
+          bgColor: '#3178c6',
+          textColor: '#ffffff',
+          borderColor: '#3178c6',
+          link: 'https://www.typescriptlang.org/'
+        },
+        {
+          name: 'Javascript',
+          bgColor: '#f7e018',
+          textColor: '#0f172a',
+          borderColor: '#f7e018',
+          link: ''
+        },
+        {
+          name: 'PHP',
+          bgColor: '#8a93be',
+          textColor: '#0f172a',
+          borderColor: '#8a93be',
+          link: ''
+        },
+      ]
+    },
+    {
+      title: 'Backend',
+      data: [
+        {
+          name: 'NodeJs',
+          bgColor: '#6aa75c',
+          textColor: '#303030',
+          borderColor: '#6aa75c',
+          link: 'https://nodejs.org/en'
+        },
+        {
+          name: 'ExpressJs',
+          bgColor: '#ffffff',
+          textColor: '#303030',
+          borderColor: '#6aa75c',
+          link: 'https://expressjs.com/'
+        },
+        {
+          name: 'Codeighniter',
+          bgColor: '#ee4323',
+          textColor: '#ffffff',
+          borderColor: '#ee4323',
+          link: 'https://codeigniter.com/'
+        },
+        {
+          name: 'NextJs',
+          bgColor: '#000000',
+          textColor: '#ffffff',
+          borderColor: '#000000',
+          link: 'https://nestjs.com/'
+        },
+        {
+          name: 'NestJs',
+          bgColor: '#e0234e',
+          textColor: '#ffffff',
+          borderColor: '#e0234e',
+          link: ''
+        }
+      ]
+    },
+    {
+      title: 'Frontend',
+      data: [
+        {
+          name: 'ReactJs',
+          bgColor: '#222222',
+          textColor: '#00d8ff',
+          borderColor: '#00d8ff',
+          link: ''
+        },
+        {
+          name: 'Tailwindcss',
+          bgColor: '#35bef8',
+          textColor: '#303030',
+          borderColor: '#35bef8',
+          link: ''
+        },
+        {
+          name: 'NextJs',
+          bgColor: '#000000',
+          textColor: '#ffffff',
+          borderColor: '#000000',
+          link: ''
+        },
+      ]
+    },
+    {
+      title: 'Database & ORM',
+      data: [
+        {
+          name: 'MySQL',
+          bgColor: '#ffffff',
+          textColor: '#cc8b29',
+          borderColor: '#00678c',
+          link: ''
+        },
+        {
+          name: 'MongoDB',
+          bgColor: '#07ac4f',
+          textColor: '#ffffff',
+          borderColor: '#07ac4f',
+          link: ''
+        },
+        {
+          name: 'PostgreSQL',
+          bgColor: '#3f7ca4',
+          textColor: '#ffffff',
+          borderColor: '#3f7ca4',
+          link: ''
+        },
+        {
+          name: 'Supabase',
+          bgColor: '#161616',
+          textColor: '#3dcc8c',
+          borderColor: '#3dcc8c',
+          link: ''
+        },
+        {
+          name: 'Mongoose',
+          bgColor: '#8a0606',
+          textColor: '#ffffff',
+          borderColor: '#8a0606',
+          link: ''
+        },
+        {
+          name: 'Sequelize',
+          bgColor: '#ffffff',
+          textColor: '#2f406a',
+          borderColor: '#1294d4',
+          link: ''
+        },
+      ]
+    },
+    {
+      title: 'Mobile',
+      data: [
+        {
+          name: 'React Native',
+          bgColor: '#222222',
+          textColor: '#00d8ff',
+          borderColor: '#00d8ff',
+          link: ''
+        },
+      ]
+    }
+  ];
+
   return (
     <div className='container lg:px-28'>
       <div className='w-full px-4'>
@@ -12,92 +167,33 @@ function skills() {
       </div>
       <div className='w-full px-4 py-4 font-semibold'>
         {/* programing langue */}
-        <div className="w-full mb-4">
-          <div className='flex flex-row w-full items-center'>
-            <h2 className='flex-shrink-0 font-bold text-lg'>Programing Langue</h2>
-            <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
+        {skills.map((skill, index) => (
+          <div key={index} className="w-full mb-4">
+            <div className='flex flex-row w-full items-center'>
+              <h2 className='flex-shrink-0 font-bold text-lg'>{skill.title}</h2>
+              <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
+              {skill.data.map((d, index2) => (
+                <a key={index2}
+                  target={!d.link ? "_self" : "_blank"}
+                  rel="noopener noreferrer"
+                  href={d.link}
+                  className="skills-list"
+                  style={
+                    {
+                      color: d.textColor,
+                      backgroundColor: d.bgColor,
+                      borderWidth: 3,
+                      borderColor: d.borderColor
+                    }
+                  }>
+                  {d.name}
+                </a>
+              ))}
+            </div >
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
-            <a target="_blank" rel="noopener noreferrer" href='https://www.typescriptlang.org/' 
-              className="skills-list border-[#3178c6] text-white bg-[#3178c6]">TypeScript</a>
-            <a href='#a'
-              className="skills-list border-[#f7e018] text-dark bg-[#f7e018]">Javascript</a>
-            <a href='#a'
-              className="skills-list border-[#8a93be] text-dark bg-[#8a93be]">PHP</a>
-            {/* <a href='#a'
-              className="skills-list border-[#0c8cc4] text-[#ec2025] bg-white">Java</a> */}
-          </div >
-        </div>
-        {/* backend */}
-        <div className="w-full mb-4">
-          <div className='flex flex-row w-full items-center'>
-            <h2 className='flex-shrink-0 font-bold text-lg'>Backend</h2>
-            <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
-            <a target="_blank" rel="noopener noreferrer" href='https://nodejs.org/en'
-              className="skills-list border-[#6aa75c] text-[#303030] bg-[#6aa75c]">NodeJs</a>
-            <a target="_blank" rel="noopener noreferrer" href='https://expressjs.com/'
-              className="skills-list border-[#6aa75c] text-[#303030] bg-[#ffffff]">ExpressJs</a>
-            <a target="_blank" rel="noopener noreferrer" href='https://codeigniter.com/'
-              className="skills-list border-[#ee4323] text-white bg-[#ee4323]">Codeighniter</a>
-            <a target="_blank" rel="noopener noreferrer" href='https://nestjs.com/'
-              className="skills-list border-[#e0234e] text-white bg-[#e0234e]">NestJs</a>
-            <a target="_blank" rel="noopener noreferrer" href='https://nextjs.org/'
-              className="skills-list border-[#000000] text-white bg-[#000000]">NextJs</a>
-          </div >
-        </div>
-        {/* frontend */}
-        <div className="w-full mb-4">
-          <div className='flex flex-row w-full items-center'>
-            <h2 className='flex-shrink-0 font-bold text-lg'>Frontend</h2>
-            <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
-            <a href='#a'
-              className="skills-list border-[#00d8ff] text-[#00d8ff] bg-[#222222]">ReactJs</a>
-            <a href='#a'
-              className="skills-list border-[#35bef8] text-[#303030] bg-[#35bef8]">Tailwindcss</a>
-            <a href='#a'
-              className="skills-list border-[#000000] text-white bg-[#000000]">NextJs</a>
-          </div >
-        </div>
-        {/* database dan orm */}
-        <div className="w-full mb-4">
-          <div className='flex flex-row w-full items-center'>
-            <h2 className='flex-shrink-0 font-bold text-lg'>Database & ORM</h2>
-            <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
-            <a href='#a'
-              className="skills-list border-[#00678c] text-[#cc8b29] bg-[#ffffff]">MySQL</a>
-            <a href='#a'
-              className="skills-list border-[#07ac4f] text-white bg-[#07ac4f]">MongoDB</a>
-            <a href='#a'
-              className="skills-list border-[#3f7ca4] text-white bg-[#3f7ca4]">PostgreSQL</a>
-            <a href='#a'
-              className="skills-list border-[#3dcc8c] text-[#3dcc8c] bg-[#161616]">Supabase</a>
-            <a href='#a'
-              className="skills-list border-[#8a0606] text-white bg-[#8a0606]">Mongoose</a>
-            <a href='#a'
-              className="skills-list border-[#1294d4] text-[#2f406a] bg-[#ffffff]">Sequelize</a>
-            <a href='#a'
-              className="skills-list border-[#0c344b] text-white bg-[#0c344b]">Prisma</a>
-          </div >
-        </div>
-
-        <div className="w-full mb-4">
-          <div className='flex flex-row w-full items-center'>
-            <h2 className='flex-shrink-0 font-bold text-lg'>Mobile</h2>
-            <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
-            {/* <a href='#a'
-              className="skills-list border-[#42de89] text-[#103b4c] bg-[#42de89]">Android Studio</a> */}
-            <a href='#a'
-              className="skills-list border-[#00d8ff] text-[#00d8ff] bg-[#222222]">React Native</a>
-          </div >
-        </div>
+        ))}
 
       </div>
     </div>
