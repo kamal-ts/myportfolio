@@ -18,14 +18,14 @@ function skills() {
           bgColor: '#f7e018',
           textColor: '#0f172a',
           borderColor: '#f7e018',
-          link: ''
+          link: '#-'
         },
         {
           name: 'PHP',
           bgColor: '#8a93be',
           textColor: '#0f172a',
           borderColor: '#8a93be',
-          link: ''
+          link: '#-'
         },
       ]
     },
@@ -65,7 +65,7 @@ function skills() {
           bgColor: '#e0234e',
           textColor: '#ffffff',
           borderColor: '#e0234e',
-          link: ''
+          link: '#-'
         }
       ]
     },
@@ -77,21 +77,21 @@ function skills() {
           bgColor: '#222222',
           textColor: '#00d8ff',
           borderColor: '#00d8ff',
-          link: ''
+          link: '#-'
         },
         {
           name: 'Tailwindcss',
           bgColor: '#35bef8',
           textColor: '#303030',
           borderColor: '#35bef8',
-          link: ''
+          link: '#-'
         },
         {
           name: 'NextJs',
           bgColor: '#000000',
           textColor: '#ffffff',
           borderColor: '#000000',
-          link: ''
+          link: '#-'
         },
       ]
     },
@@ -103,42 +103,42 @@ function skills() {
           bgColor: '#ffffff',
           textColor: '#cc8b29',
           borderColor: '#00678c',
-          link: ''
+          link: '#-'
         },
         {
           name: 'MongoDB',
           bgColor: '#07ac4f',
           textColor: '#ffffff',
           borderColor: '#07ac4f',
-          link: ''
+          link: '#-'
         },
         {
           name: 'PostgreSQL',
           bgColor: '#3f7ca4',
           textColor: '#ffffff',
           borderColor: '#3f7ca4',
-          link: ''
+          link: '#-'
         },
         {
           name: 'Supabase',
           bgColor: '#161616',
           textColor: '#3dcc8c',
           borderColor: '#3dcc8c',
-          link: ''
+          link: '#-'
         },
         {
           name: 'Mongoose',
           bgColor: '#8a0606',
           textColor: '#ffffff',
           borderColor: '#8a0606',
-          link: ''
+          link: '#-'
         },
         {
           name: 'Sequelize',
           bgColor: '#ffffff',
           textColor: '#2f406a',
           borderColor: '#1294d4',
-          link: ''
+          link: '#-'
         },
       ]
     },
@@ -150,7 +150,7 @@ function skills() {
           bgColor: '#222222',
           textColor: '#00d8ff',
           borderColor: '#00d8ff',
-          link: ''
+          link: '#-'
         },
       ]
     }
@@ -176,7 +176,7 @@ function skills() {
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
               {skill.data.map((d, index2) => (
                 <a key={index2}
-                  target={!d.link ? "_self" : "_blank"}
+                  target={d.link === '#-' ? "_self" : "_blank"}
                   rel="noopener noreferrer"
                   href={d.link}
                   className="skills-list"
