@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { SiCodeigniter, SiExpress, SiJavascript, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiReact, SiSequelize, SiSupabase, SiTailwindcss, SiTypescript } from 'react-icons/si'
 
 function skills() {
 
@@ -8,23 +9,17 @@ function skills() {
       data: [
         {
           name: 'TypeScript',
-          bgColor: '#3178c6',
-          textColor: '#ffffff',
-          borderColor: '#3178c6',
+          icon: < SiTypescript />,
           link: 'https://www.typescriptlang.org/'
         },
         {
           name: 'Javascript',
-          bgColor: '#f7e018',
-          textColor: '#0f172a',
-          borderColor: '#f7e018',
+          icon: < SiJavascript />,
           link: '#-'
         },
         {
-          name: 'PHP',
-          bgColor: '#8a93be',
-          textColor: '#0f172a',
-          borderColor: '#8a93be',
+          name: 'php',
+          icon: < SiPhp />,
           link: '#-'
         },
       ]
@@ -34,37 +29,27 @@ function skills() {
       data: [
         {
           name: 'NodeJs',
-          bgColor: '#6aa75c',
-          textColor: '#303030',
-          borderColor: '#6aa75c',
+          icon: < SiNodedotjs />,
           link: 'https://nodejs.org/en'
         },
         {
           name: 'ExpressJs',
-          bgColor: '#ffffff',
-          textColor: '#303030',
-          borderColor: '#6aa75c',
+          icon: < SiExpress />,
           link: 'https://expressjs.com/'
         },
         {
           name: 'Codeighniter',
-          bgColor: '#ee4323',
-          textColor: '#ffffff',
-          borderColor: '#ee4323',
+          icon: < SiCodeigniter />,
           link: 'https://codeigniter.com/'
         },
         {
           name: 'NextJs',
-          bgColor: '#000000',
-          textColor: '#ffffff',
-          borderColor: '#000000',
+          icon: < SiNextdotjs />,
           link: 'https://nestjs.com/'
         },
         {
           name: 'NestJs',
-          bgColor: '#e0234e',
-          textColor: '#ffffff',
-          borderColor: '#e0234e',
+          icon: < SiNestjs />,
           link: '#-'
         }
       ]
@@ -74,23 +59,17 @@ function skills() {
       data: [
         {
           name: 'ReactJs',
-          bgColor: '#222222',
-          textColor: '#00d8ff',
-          borderColor: '#00d8ff',
+          icon: < SiReact />,
           link: '#-'
         },
         {
           name: 'Tailwindcss',
-          bgColor: '#35bef8',
-          textColor: '#303030',
-          borderColor: '#35bef8',
+          icon: < SiTailwindcss />,
           link: '#-'
         },
         {
           name: 'NextJs',
-          bgColor: '#000000',
-          textColor: '#ffffff',
-          borderColor: '#000000',
+          icon: < SiNextdotjs />,
           link: '#-'
         },
       ]
@@ -100,44 +79,27 @@ function skills() {
       data: [
         {
           name: 'MySQL',
-          bgColor: '#ffffff',
-          textColor: '#cc8b29',
-          borderColor: '#00678c',
+          icon: < SiMysql />,
           link: '#-'
         },
         {
           name: 'MongoDB',
-          bgColor: '#07ac4f',
-          textColor: '#ffffff',
-          borderColor: '#07ac4f',
+          icon: < SiMongodb />,
           link: '#-'
         },
         {
           name: 'PostgreSQL',
-          bgColor: '#3f7ca4',
-          textColor: '#ffffff',
-          borderColor: '#3f7ca4',
+          icon: < SiPostgresql />,
           link: '#-'
         },
         {
           name: 'Supabase',
-          bgColor: '#161616',
-          textColor: '#3dcc8c',
-          borderColor: '#3dcc8c',
-          link: '#-'
-        },
-        {
-          name: 'Mongoose',
-          bgColor: '#8a0606',
-          textColor: '#ffffff',
-          borderColor: '#8a0606',
+          icon: < SiSupabase />,
           link: '#-'
         },
         {
           name: 'Sequelize',
-          bgColor: '#ffffff',
-          textColor: '#2f406a',
-          borderColor: '#1294d4',
+          icon: < SiSequelize />,
           link: '#-'
         },
       ]
@@ -147,9 +109,7 @@ function skills() {
       data: [
         {
           name: 'React Native',
-          bgColor: '#222222',
-          textColor: '#00d8ff',
-          borderColor: '#00d8ff',
+          icon: < SiReact />,
           link: '#-'
         },
       ]
@@ -166,29 +126,23 @@ function skills() {
         </div>
       </div>
       <div className='w-full px-4 py-4 font-semibold'>
-        {/* programing langue */}
         {skills.map((skill, index) => (
           <div key={index} className="w-full mb-4">
             <div className='flex flex-row w-full items-center'>
-              <h2 className='flex-shrink-0 font-bold text-lg'>{skill.title}</h2>
-              <div className='h-[2px]  bg-dark flex-1 ml-4'></div>
+              <h2 className='flex-shrink-0 font-semibold text-base'>{skill.title}</h2>
+              <div className='h-[1px]  bg-dark flex-1 ml-4'></div>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 w-full py-4">
+            <div className="col-skills">
               {skill.data.map((d, index2) => (
+
                 <a key={index2}
                   target={d.link === '#-' ? "_self" : "_blank"}
                   rel="noopener noreferrer"
                   href={d.link}
-                  className="skills-list"
-                  style={
-                    {
-                      color: d.textColor,
-                      backgroundColor: d.bgColor,
-                      borderWidth: 3,
-                      borderColor: d.borderColor
-                    }
-                  }>
-                  {d.name}
+                  className="skills-list text-secondary hover:text-indigo bg-slate-100"
+                >
+                  <span className='text-4xl'>{d.icon}</span>
+                  <span className='text-sm font-medium'>{d.name}</span>
                 </a>
               ))}
             </div >
