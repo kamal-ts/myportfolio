@@ -45,12 +45,12 @@ function skills() {
         {
           name: 'NextJs',
           icon: < SiNextdotjs />,
-          link: 'https://nestjs.com/'
+          link: 'https://nextjs.org/'
         },
         {
           name: 'NestJs',
           icon: < SiNestjs />,
-          link: '#-'
+          link: 'https://nestjs.com/'
         }
       ]
     },
