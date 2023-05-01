@@ -51,22 +51,22 @@ function portfolio() {
           </div>
         ))}
 
-        <div hidden={detile} className='z-[1000] fixed inset-0 bg-black bg-opacity-25'>
-          <div id='modal' className={`containerDetailPortfolio flex items-center justify-center`}>
-            <div className='w-full md:w-3/4 h-3/4 bg-white mt-20 border-2 rounded-2xl'>
-              <div className='flex flex-col'>
-                <div className='border-b-2 px-4 py-3 flex flex-row justify-between items-center'>
+        <div hidden={detile} className={`z-[1000] fixed inset-0 bg-opacity-25 ${detile? '' : 'bg-black'}`}>
+          <div  className={`static w-full flex items-center justify-center`}>
+            <div id='modal' className='w-full containerDetailPortfolio md:w-3/4 h-[90%] absolute bottom-0 bg-white border-2 rounded-t-2xl'>
+              
+                <div className='w-full border-b-2 px-4 py-3 flex flex-row justify-between items-center'>
                   <h1 className='font-bold text-base capitalize'>Restfull API aplikasi boking hotel</h1>
                   <button onClick={handleClose} className=''>❌</button>
                 </div>
-                <div className='p-4 overflow-hidden scroll-my-96'>
+                <div className='p-4 w-full h-[90%] overflow-y-auto'>
                   <p className='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur magnam vero perferendis nesciunt exercitationem temporibus, mollitia placeat reprehenderit deleniti eveniet fugiat tempore velit beatae neque doloribus architecto minus maxime sit!</p>
                   <p className='mb-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nulla voluptates veritatis esse repellat nobis voluptas magnam non fugiat impedit minus facere beatae vero reiciendis, repellendus doloremque quod laborum neque amet laboriosam aliquam velit aspernatur atque! Ab iusto eius quia!</p>
                   <p className='mb-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nulla voluptates veritatis esse repellat nobis voluptas magnam non fugiat impedit minus facere beatae vero reiciendis, repellendus doloremque quod laborum neque amet laboriosam aliquam velit aspernatur atque! Ab iusto eius quia!</p>
                   <p className='mb-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nulla voluptates veritatis esse repellat nobis voluptas magnam non fugiat impedit minus facere beatae vero reiciendis, repellendus doloremque quod laborum neque amet laboriosam aliquam velit aspernatur atque! Ab iusto eius quia!</p>
                   <p className='mb-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nulla voluptates veritatis esse repellat nobis voluptas magnam non fugiat impedit minus facere beatae vero reiciendis, repellendus doloremque quod laborum neque amet laboriosam aliquam velit aspernatur atque! Ab iusto eius quia!</p>
                 </div>
-              </div>
+              
             </div>
           </div>
         </div>
